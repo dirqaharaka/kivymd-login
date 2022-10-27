@@ -2,4 +2,34 @@ MDScreen:
     name: "pre-splash"
     MDFloatLayout:
         md_bg_color: 41/255, 135/255, 168/255, 1
+
+        Image:
+            source: "assets/logo.png"
+            size_hint: .26, .26
+            pos_hint: {"center_x":.5, "center_y":.55}
+            canvas.before:
+                Color: 
+                    rgb: 1,1,1,1
+                Ellipse:
+                    size: 130, 130
+                    pos: 110, 250
+        MDLabel:
+            text: "LARM182"
+            pos_hint: {"center_x":.8, "center_y":.2}
+            haling: "center"
+            theme_text_color: "Custom"
+            text_color: 1,1,1,1
+            font_size: "38sp"
+            font_name: "Poppins-SemiBold.ttf"
+        
+        MDLabel:
+            text: "Las Soluciones Completas"
+            pos_hint: {"center_x":.8, "center_y":.15}
+            haling: "center"
+            theme_text_color: "Custom"
+            text_color: 1,1,1,1
+            font_size: "13sp"
+            font_name: "Poppins-Regular.ttf"
+        
+
     
